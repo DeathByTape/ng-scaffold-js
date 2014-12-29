@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #f0f0f0;
+  font-family: "arial";
+}
+#intro{
+  background: #fff;
+  width: 500px;
+  padding: 40px;
+  margin: 100px auto 0px auto;
+  text-align:center;
+}
+#intro p{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+table th,table td{
+  padding: 5px;
+  text-align:left;
+  border: 1px solid #e8e8e8;
+}

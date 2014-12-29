@@ -1,0 +1,19 @@
+{
+  "name": "ng-scaffold-js",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "amanvirk <virk.officials@gmail.com>",
+  "license": "ISC",
+  "ng-hook":{
+    "name": "ng-scaffold-js",
+    "after": ["ng-project-blueprint"],
+    "hook-for": "new"
+  },
+  "devDependencies":{
+    "fs-concatenate": "git+https://github.com/thetutlage/fs-concatenate.git"
+  }
+}
