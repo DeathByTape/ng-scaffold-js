@@ -65,7 +65,7 @@
     var defer = Promise.defer();
     if(args.new){
       if(project_config && _.size(project_config) > 0){
-        if(project_config.preffered_coding_style.toLowerCase().replace(" ","") === "coffeescript"){
+        if(project_config.preffered_coding_style.toLowerCase().replace(" ","") === "javascript"){
           var project_path = path.join(process.cwd(),args.new);
 
           hook.writeFiles(project_path,config)
