@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "node node_modules/fs-concatenate -i snippets -o snippets.js"
   },
   "author": "amanvirk <virk.officials@gmail.com>",
   "license": "ISC",
