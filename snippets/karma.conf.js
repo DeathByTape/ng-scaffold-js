@@ -1,22 +1,31 @@
+/**
+---------------------------------------------------
+                  KARMA CONFIG
+---------------------------------------------------
+
+Config file for your karma tests
+
+*/
+
 module.exports = function(config) {
   config.set({
     basePath: '',
     frameworks: ['jasmine','browserify'],
     files: [
-    'bower_components/angular/angular.js',
-    'app/app.js',
-    'bower_components/angular-mocks/angular-mocks.js',
-    'tests/**/*.js'
+      'bower_components/angular/angular.js',
+      'app/app.js',
+      'bower_components/angular-mocks/angular-mocks.js',
+      'tests/**/*.js'
     ],
     preprocessors: {
       'tests/**/*.js':['browserify'],
       'app/app.js': ['browserify']
     },
     plugins:[
-    'karma-mocha-reporter',
-    'karma-jasmine',
-    'karma-browserify',
-    'karma-chrome-launcher'
+      'karma-mocha-reporter',
+      'karma-jasmine',
+      'karma-browserify',
+      'karma-chrome-launcher'
     ],
     reporters: ['mocha'],
     port: 9876,

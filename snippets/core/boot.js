@@ -1,3 +1,18 @@
+/**
+----------------------------------------------------------------------
+                          NG CLI BOOT APP
+----------------------------------------------------------------------
+
+boot.js file will start your angular app.
+
+What's going on ?
+
+Extends your manual dependencies
+Resolve initializers
+Bootstrap angular app
+
+*/
+
 var boot, bulk, initAngularApp, initializers;
 
 require("angular");
