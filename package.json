@@ -13,7 +13,7 @@
     "after": ["ng-project-blueprint"],
     "hook-for": "new"
   },
-  "devDependencies":{
+  "dependencies":{
     "fs-concatenate": "git+https://github.com/thetutlage/fs-concatenate.git"
   }
 }
