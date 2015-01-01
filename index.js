@@ -63,10 +63,10 @@
   Hook.prototype.init = function(output,ngconfig,args,config){
     var project_config = config.get("ngconfig");
     var defer = Promise.defer();
-    if(args.command){
+    if(args.name){
       if(project_config && _.size(project_config) > 0){
         if(project_config.preffered_coding_style.toLowerCase().replace(" ","") === "javascript"){
-          var project_path = path.join(process.cwd(),args.command);
+          var project_path = path.join(process.cwd(),args.name);
 
           hook.writeFiles(project_path,config)
           .then(function(success){
