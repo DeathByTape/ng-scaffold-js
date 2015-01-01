@@ -12,6 +12,7 @@ Resolve initializers
 Bootstrap angular app
 
 */
+"use strict";
 
 var boot, bulk, initAngularApp, initializers;
 
@@ -46,8 +47,8 @@ boot = function(dependencies) {
   app = angular.module("{@= app_name @}", deps);
   mapHash = {};
   injectorDependencies = ["{@= app_name @}"];
-  if (Object.keys(initializers).length > 0 && typeof initializers[".."] !== "undefined" && typeof initializers[".."]["app"] !== "undefined") {
-    resolvesList = initializers[".."]["app"].initializers;
+  if (Object.keys(initializers).length > 0 && typeof initializers[".."] !== "undefined" && typeof initializers[".."].app !== "undefined") {
+    resolvesList = initializers[".."].app.initializers;
     objectKeys = Object.keys(resolvesList);
     x = 0;
     while (x < objectKeys.length) {

@@ -1,6 +1,8 @@
+"use strict";
+
 var routeMap;
 
-routeMap = require('../routes.js');
+routeMap = require("../routes.js");
 
 module.exports = /* @ngInject */ function($routeProvider, $locationProvider) {
   angular.forEach(routeMap, function(route) {
@@ -19,7 +21,7 @@ module.exports = /* @ngInject */ function($routeProvider, $locationProvider) {
 
 /** OR */
 
-routeMap = require('../routes.js');
+routeMap = require("../routes.js");
 
 module.exports = /* @ngInject */ function($stateProvider, $urlRouterProvider) {
   angular.forEach(routeMap, function(route) {
