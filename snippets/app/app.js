@@ -48,7 +48,7 @@ boot();
 
 /*
    * Uncomment when you create directives
-  require "./directives"
+  require("./directives");
  */
 
 require("./templates");
