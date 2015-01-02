@@ -36,7 +36,7 @@ boot();
 
 /*
    * Uncomment when you create factory
-  require("./factories");
+  require("./services");
  */
 
 
