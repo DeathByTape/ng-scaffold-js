@@ -16,7 +16,7 @@
     if(bower_object.dependencies["angular-route"]){
       return content[0];
     }else if(bower_object.dependencies["angular-ui-router"]){
-      return content[0];
+      return content[1];
     }
   },
 
